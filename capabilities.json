@@ -1,0 +1,77 @@
+{
+    "dataRoles": [{
+            "displayName": "Axis",
+            "name": "category",
+            "kind": "Grouping"
+        },
+        {
+            "displayName": "Value",
+            "name": "measure",
+            "kind": "Measure"
+        }
+    ],
+    "objects": {
+        "dataPoint": {
+            "displayName": "Data points",
+            "properties": {
+                "defaultColor": {
+                    "displayName": "Color",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "showAllDataPoints": {
+                    "displayName": "Show data points",
+                    "type": {
+                        "bool": true
+                    }
+                }
+            }
+        },
+        "line": {
+            "displayName": "Line",
+            "properties": {
+                "lineColor": {
+                    "displayName": "Color",
+                    "description": "The fill color of the line.",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "tooltips": {
+        "supportedTypes": {
+            "default": true,
+            "canvas": true
+        },
+        "roles": [
+            "tooltips"
+        ]
+    },
+    "dataViewMappings": [{
+        "categorical": {
+            "categories": {
+                "for": {
+                    "in": "category"
+                }
+            },
+            "values": {
+                "select": [{
+                    "bind": {
+                        "to": "measure"
+                    }
+                }]
+            }
+        }
+    }]
+}

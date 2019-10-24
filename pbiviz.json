@@ -1,0 +1,25 @@
+{
+    "visual": {
+        "name": "linechart",
+        "displayName": "linechart",
+        "guid": "linechart015544EC07FC4820A7C1D7488D65A57C",
+        "visualClassName": "Visual",
+        "version": "1.0.0",
+        "description": "",
+        "supportUrl": "",
+        "gitHubUrl": ""
+    },
+    "apiVersion": "2.6.0",
+    "author": {
+        "name": "",
+        "email": ""
+    },
+    "assets": {
+        "icon": "assets/icon.png"
+    },
+    "externalJS": null,
+    "style": "style/visual.less",
+    "capabilities": "capabilities.json",
+    "dependencies": null,
+    "stringResources": []
+}
